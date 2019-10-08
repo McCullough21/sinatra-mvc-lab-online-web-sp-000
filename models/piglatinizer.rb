@@ -11,14 +11,9 @@ def piglatinize(text)
   @new = []
   @arr = text.split
   @arr.each do |word|
-    x = word.to_s
-    if x.match(/\b[AEIOUaeiou][a-z]*\b/)
-       @y = x.scan(/\w/)
-
-        2.times do
-        @y.insert(-1, @y.delete_at(0))
-        end
-        @latin_vowel = "#{@y.join("")}way"
+    @x = word.to_s
+    if @x.match(/\b[AEIOUaeiou][a-z]*\b/)
+        @latin_vowel = "#{@x}way"
         @new.push(@latin_vowel)
     else
        @c = x.scan(/\w/)
