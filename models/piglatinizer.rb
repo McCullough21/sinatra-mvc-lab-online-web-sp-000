@@ -29,7 +29,7 @@ def piglatinize(text)
        @new.push(@latin_cons)
      end
   end
-  @new.join("")
+  @new.join(" ")
 end
 
 # piglatinize("hello there person")
