@@ -4,7 +4,7 @@ class PigLatinizer
 attr_accessor :text, :new, :arr, :latin
 
 def initialize(text)
-  piglatinize(text)
+  piglatinize(text.strip)
 end
 
 def piglatinize(text)
