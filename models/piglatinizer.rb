@@ -23,7 +23,8 @@ def piglatinize
        @new.push(@latin_cons)
     end
   end
-  @new.join(" ")
+  @result = @new.join(" ")
+  @result
 end
 
 # piglatinize("hello there person")
