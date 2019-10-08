@@ -22,7 +22,7 @@ def piglatinize(text)
          @latin_cons = "#{@w.join("")}ay"
          @new.push(@latin_cons)
          else
-           @w.insert(-1, @w.delete_at(0)) 
+           @w.insert(-1, @w.delete_at(0))
            @latin_cons = "#{@w.join("")}ay"
            @new.push(@latin_cons)
          end
