@@ -3,9 +3,7 @@ require 'pry'
 class PigLatinizer
 attr_accessor :text, :new, :arr, :latin
 
-def initialize(text)
-  @text = text
-  piglatinize(@text)
+def initialize
 end
 
 def piglatinize(text)
