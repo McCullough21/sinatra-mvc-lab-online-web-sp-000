@@ -19,7 +19,11 @@ def piglatinize(text)
         @y.insert(-1, @y.delete_at(0))
         end
         @latin = "#{@y.join("")}way"
-        binding.pry
+    else 
+       @c = x.scan(/\w/)
+       2.times do
+       @c.insert(-1, @c.delete_at(0))
+       
 
   end
 end
