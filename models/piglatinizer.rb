@@ -25,10 +25,11 @@ def piglatinize(text)
        2.times do
        @c.insert(-1, @c.delete_at(0))
        end
-       @
-
-
+       @latin_cons = "#{@c.join("")}ay"
+       @new.push(@latin_cons)
+     end
   end
+  @new.join("")
 end
 
 # piglatinize("hello there person")
