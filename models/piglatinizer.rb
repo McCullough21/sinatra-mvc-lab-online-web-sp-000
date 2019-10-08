@@ -1,7 +1,7 @@
 
 require 'pry'
 class PigLatinizer
-attr_accessor :text, :new, :arr, :latin
+attr_accessor :text, :new, :arr, :latin, :result
 
 def initialize(text)
   @text = text.downcase
