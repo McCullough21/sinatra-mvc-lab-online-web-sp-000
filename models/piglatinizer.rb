@@ -3,10 +3,11 @@ require 'pry'
 class PigLatinizer
 attr_accessor :text, :new, :arr, :latin
 
-def initialize
+def initialize(text)
+  @text = text.downcase
 end
 
-def piglatinize(text)
+def piglatinize
   @new = []
   @arr = text.split
   @arr.each do |word|
