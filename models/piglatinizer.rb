@@ -18,7 +18,7 @@ def piglatinize(text)
     else
        @c = @x.scan(/\w/)
        @w = @c.insert(-1, @c.delete_at(0))
-        @w.insert(-1, @w.delete_at(0)) if @w[0] !~ (/\b[AEIOUaeiou][a-z]*\b/)
+        @w.insert(-1, @w.delete_at(0)) if @w[0] !~ /\b[AEIOUaeiou][a-z]*\b/
        @latin_cons = "#{@w.join("")}ay"
        @new.push(@latin_cons)
     end
