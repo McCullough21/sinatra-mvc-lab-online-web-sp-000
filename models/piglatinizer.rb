@@ -5,7 +5,6 @@ attr_accessor :text, :new, :arr, :latin
 
 def initialize(text)
   piglatinize(text)
-
 end
 
 def piglatinize(text)
