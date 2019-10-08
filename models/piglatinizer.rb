@@ -9,7 +9,7 @@ end
 
 def piglatinize
   @new = []
-  @arr = text.split
+  @arr = @text.split
   @arr.each do |word|
     @x = word.to_s
     if @x.match(/\b[AEIOUaeiou][a-z]*\b/)
