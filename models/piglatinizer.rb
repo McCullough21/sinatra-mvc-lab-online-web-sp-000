@@ -7,7 +7,7 @@ def initialize
 end
 
 def piglatinize(text)
-  @text = text.downcase
+  @text = text
   @new = []
   @arr = @text.split
   @arr.each do |word|
